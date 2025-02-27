@@ -12,7 +12,7 @@ class Banner(models.Model):
 
 class AboutUs(models.Model):
     title = models.CharField(max_length=225)
-    content = models.TextField()
+    content =RichTextField()
     image = models.ImageField(upload_to='about_us/')
 
     def __str__(self):
@@ -40,7 +40,7 @@ class ContactUs(models.Model):
     name = models.CharField(max_length=225)
     email = models.EmailField(max_length=225)
     phone = models.CharField(max_length=225, blank=True, null=True)  # Phone is optional
-    message = models.TextField()
+    message = RichTextField()
 
     def __str__(self):
         return self.name
