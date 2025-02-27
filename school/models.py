@@ -26,7 +26,7 @@ class BlogPost(models.Model):
     ]
 
     title = models.CharField(max_length=225)
-    img = models.ImageField(upload_to='blog_images/')
+    image = models.ImageField(upload_to='blog_images/')
     content =RichTextField()
     author = models.CharField(max_length=50)
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='draft')
