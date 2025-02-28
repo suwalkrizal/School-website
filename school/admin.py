@@ -29,4 +29,6 @@ class BlogPostAdmin(admin.ModelAdmin):
 class ContactUsAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'email', 'phone')
     search_fields = ('name', 'email')
-    list_filter = ('email',)
+    list_filter = ('email',) 
+    
+
