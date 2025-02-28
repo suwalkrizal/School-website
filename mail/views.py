@@ -28,12 +28,12 @@ def contact_us(request):
         )
 
         # Optional: Notify admin about the new contact
-        send_mail(
-            subject="New Contact Us Submission",
-            message=f"New message from {name} ({email}):\n\n{message}",
-            from_email=settings.EMAIL_HOST_USER,
-            recipient_list=[settings.EMAIL_HOST_USER],  # Admin's email
-        )
+        # send_mail(
+        #     subject="New Contact Us Submission",
+        #     message=f"New message from {name} ({email}):\n\n{message}",
+        #     from_email=settings.EMAIL_HOST_USER,
+        #     recipient_list=[settings.EMAIL_HOST_USER],  # Admin's email
+        # )
 
         return HttpResponse("Message sent successfully!")
     
