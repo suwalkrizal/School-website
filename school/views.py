@@ -5,6 +5,7 @@ from rest_framework import viewsets
 from .models import *
 from .serializers import *
 
+
 class BannerViewSet(viewsets.ModelViewSet):
     queryset = Banner.objects.all()
     serializer_class = BannerSerializer
@@ -22,3 +23,6 @@ class BlogPostViewSet(viewsets.ModelViewSet):
 class ContactUsViewSet(viewsets.ModelViewSet):
     queryset = ContactUs.objects.all()
     serializer_class = ContactUsSerializer
+
+
+
